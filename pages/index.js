@@ -1,18 +1,21 @@
 import Head from 'next/head'
 import Navhome from './Navhome'
-import Carouselhome from './Carouselhome'
+
+import CarouselFade from './Untitled-1.js'
+import Footer from './Footer'
 
 function HomePage() {
   return (
     <>
     <Navhome />
-    <Carouselhome />
+    <CarouselFade />
+
         <div className="container">
       <Head>
         <title>Kabaad</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800 " />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800"/>
       </Head>
       
       <main>
@@ -23,7 +26,6 @@ function HomePage() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p> */}
-         
 
 
         <div className="grid">
@@ -57,16 +59,8 @@ function HomePage() {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
+
+      <Footer />
 
       <style jsx>{`
         main {
@@ -78,29 +72,8 @@ function HomePage() {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
 
-        footer img {
-          margin-left: 0.5rem;
-        }
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
 
         .title a {
           color: #0070f3;
@@ -199,13 +172,50 @@ function HomePage() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
-
+        a,
+        a:hover,
+        a:focus,
+        a:active,
+        button:focus {
+          text-decoration: none;
+          border: none;
+          outline: 0;
+          color: #fff;
+        }
+        ul ol,
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+}
         * {
           box-sizing: border-box;
         }
+
+        .CarouselItem {
+          height: calc(100vh - 70px) !important;
+          }
+
+          .CarouselItem::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #3333338f;
+            z-index:199;
+          }
+
+          .CarouselCaption {
+           bottom: 50%  ;
+           z-index:200;
+
+          }
       `}</style>
     </div>
-    </>
+    </> 
 
   )
 }

@@ -4,32 +4,28 @@ import carouselOne from '../public/group-people-working-out-business-plan-office
 import carouselTwo from '../public/pexels-fauxels-3182747.jpg';
 import carouselThree from '../public/pexels-fauxels-3184303.jpg';
 
-
-
-
-
-
-  function Carouselhome() {
+function CarouselFade() {
   return (
-<Carousel wrap>
-      <Carousel.Item interval={1000} className='CarouselItem'>
+    <Carousel fade>
+      <Carousel.Item className='CarouselItem'>
         <Image
           className="d-block w-100"
-          src={carouselOne}
+          src= {carouselOne}
           alt="First slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className="CarouselCaption">
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500} className='CarouselItem'>
+      <Carousel.Item className='CarouselItem'>
         <Image
           className="d-block w-100"
-          src={carouselTwo}
+          src= {carouselTwo}
           alt="Second slide"
         />
-        <Carousel.Caption>
+
+        <Carousel.Caption className="CarouselCaption">
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
@@ -37,22 +33,20 @@ import carouselThree from '../public/pexels-fauxels-3184303.jpg';
       <Carousel.Item className='CarouselItem'>
         <Image
           className="d-block w-100"
-          src={carouselThree}
+          src= {carouselThree}
           alt="Third slide"
         />
-        <Carousel.Caption>
+
+        <Carousel.Caption className="CarouselCaption">
           <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-
-
-   </Carousel>
-
+    </Carousel>
+    
   );
 }
 
-export default Carouselhome;
-
+export default CarouselFade;
