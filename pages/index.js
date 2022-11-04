@@ -1,21 +1,30 @@
 import Head from 'next/head'
+import Navhome from './Navhome'
+import Carouselhome from './Carouselhome'
 
-export default function Home() {
+function HomePage() {
   return (
-    <div className="container">
+    <>
+    <Navhome />
+    <Carouselhome />
+        <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Kabaad</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800 " />
       </Head>
-
+      
       <main>
-        <h1 className="title">
+        {/* <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
-        </p>
+        </p> */}
+         
+
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -60,15 +69,6 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
         main {
           padding: 5rem 0;
           flex: 1;
@@ -205,5 +205,8 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </>
+
   )
 }
+export default HomePage
