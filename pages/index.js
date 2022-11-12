@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navhome from './Navhome'
 
-import CarouselFade from './Untitled-1.js'
+import CarouselFade from './Carousel.js'
 import Footer from './Footer'
 
 function HomePage() {

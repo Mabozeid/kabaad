@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1>Kabaad.</h1>
+            <h1>Kabad.</h1>
             <ul className="text-center">
 
               <li>
