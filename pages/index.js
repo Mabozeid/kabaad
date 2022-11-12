@@ -60,7 +60,6 @@ function HomePage() {
       </main>
 
 
-      <Footer />
 
       <style jsx>{`
         main {
@@ -203,18 +202,40 @@ function HomePage() {
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 70px) !important;
             background-color: #3333338f;
             z-index:199;
           }
 
           .CarouselCaption {
-           bottom: 50%  ;
-           z-index:200;
-
+            z-index: 200;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transform: translate(0, 50%);
+            padding: 0 ;
           }
+
+          .carousel-indicators{
+            margin-bottom: 3rem;
+          }
+          .CarouselCaption h3 {
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #00D8C3;
+            text-transform: uppercase;
+            line-height: 50px;
+            font-family: "Open Sans",sans-serif;
+        }
+          }  
+
       `}</style>
     </div>
+    <Footer />
     </> 
 
   )

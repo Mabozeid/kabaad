@@ -2,13 +2,26 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from 'next/image';
+import mainLogo from '../public/v686-taus-06-corporatelogos.png';
 
 function Navhome() {
   return (
     <>
       <Navbar bg="light" variant="light" className="navHome">
         <Container>
-          <Navbar.Brand href="/" className="navBrand">KABAAD.</Navbar.Brand>
+
+
+    <Navbar.Brand  href="/" className="navBrand">
+    <Image
+          className="mainBrand"
+          src={mainLogo}
+          alt="mainLogo"
+          width="50"
+          height="50"
+        />
+      KABAD.</Navbar.Brand>
+
           <Nav className="mr-auto">
             <Nav.Link href="/" className='navItem'>Home</Nav.Link>
             <Nav.Link href="/features" className='navItem'>Features</Nav.Link>
@@ -29,18 +42,21 @@ border-bottom: 1px solid #eee;
 .navBrand{  
   z-index: 999;
   font-size: 28px;
-  color: #0069ff !important;
+  color: #40558e !important;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
   text-align: center;
   padding-bottom: 15px;
   font-family: "Open Sans", sans-serif;
+  line-height: 50px;
+  display: flex;
 }
 
   .navItem{    
     font-size: 13px;
     font-weight: 700;
+    color: #333;
     padding: 20px 0;
     font-family: "Open Sans", sans-serif;
     margin: 0 20px 0 5px;

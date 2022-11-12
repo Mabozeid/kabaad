@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import { faFaceSmile } from '@fortawesome/free-solid-svg-icons'
+import { facebook } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   return (
@@ -15,11 +16,11 @@ export default function Footer() {
 
               <li>
                 <a href="#">
-                <FontAwesomeIcon icon={faArrowRightToBracket} />
+                <FontAwesomeIcon icon={faArrowRightToBracket}  size="xs" />
                  </a>
               </li>
               <li>
-                <a href="#"><FontAwesomeIcon icon={faFaceSmile}/></a>
+                <a href="#"><FontAwesomeIcon icon={faArrowRightToBracket} size="1x"/></a>
               </li>
               <li>
               <a href="#"><FontAwesomeIcon icon={faFaceSmile}/></a>
@@ -36,7 +37,7 @@ export default function Footer() {
             </ul>
 
             <div className="copyright text-center">
-              © 2022 Kabaad All Rights Reserved By
+              © 2022 Kabad All Rights Reserved By
               <a href="#">KeepGo</a>
             </div>
           </div>
@@ -59,7 +60,7 @@ footer {
 footer h1 {
   z-index: 999;
   font-size: 28px;
-  color: #0069ff !important;
+  color: #40558e !important;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
