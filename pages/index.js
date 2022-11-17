@@ -12,7 +12,7 @@ function HomePage() {
 
         <div className="container">
       <Head>
-        <title>Kabaad</title>
+        <title>Kabad</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800"/>
@@ -225,11 +225,11 @@ function HomePage() {
           .CarouselCaption h3 {
             font-size: 50px;
             font-weight: 700;
-            letter-spacing: 1px;
-            color: #00D8C3;
+            color: #00d8c3;
             text-transform: uppercase;
             line-height: 50px;
-            font-family: "Open Sans",sans-serif;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 1.5px;
         }
           }  
 

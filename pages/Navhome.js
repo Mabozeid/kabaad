@@ -4,25 +4,28 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 import mainLogo from '../public/v686-taus-06-corporatelogos.png';
+import Button from 'react-bootstrap/Button';
+
+
+
 
 function Navhome() {
   return (
     <>
-      <Navbar bg="light" variant="light" className="navHome">
-        <Container>
-
-
-    <Navbar.Brand  href="/" className="navBrand">
-    <Image
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="navHome">
+      <Container>
+      <Navbar.Brand  href="/" className="navBrand">
+          <Image
           className="mainBrand"
           src={mainLogo}
           alt="mainLogo"
           width="50"
           height="50"
-        />
-      KABAD.</Navbar.Brand>
-
-          <Nav className="mr-auto">
+        />  KABAD.</Navbar.Brand>
+        
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mx-auto">
             <Nav.Link href="/" className='navItem'>Home</Nav.Link>
             <Nav.Link href="/features" className='navItem'>Features</Nav.Link>
             <Nav.Link href="/Pricing" className='navItem'>Pricing</Nav.Link>
@@ -30,12 +33,20 @@ function Navhome() {
             <Nav.Link href="/News" className='navItem'>News</Nav.Link>
             <Nav.Link href="/Contact" className='navItem'>Contact</Nav.Link>
           </Nav>
-        </Container>
-      </Navbar>
+          <Nav>
+            <Nav.Link href="/"><Button variant="primary">Get Consultation</Button>{' '}</Nav.Link>
+            <Nav.Link eventKey={2} href="/">
+            </Nav.Link>
+
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+      
 
   <style jsx global>{`
 .navHome {
-height: 70px ;
+// height: 70px ;
 background-color: #fff !important;
 border-bottom: 1px solid #eee;
 }
