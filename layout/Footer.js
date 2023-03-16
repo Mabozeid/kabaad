@@ -1,21 +1,42 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
-import { faFaceSmile } from '@fortawesome/free-solid-svg-icons'
-import { facebook } from '@fortawesome/free-solid-svg-icons'
+// Import the FontAwesomeIcon component
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// import the icons you need
+import {
+  faEnvelope,
+  faClockFour,
+  faLocationPin,
+  faCaretRight,
+  faPhone,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faDribbble,
+} from "@fortawesome/free-brands-svg-icons";
 import Image from 'next/image';
 import mainLogo from '../public/v686-taus-06-corporatelogos.png';
+import footerImg from "../public/sharon-mccutcheon-DtEvbe8SJSI-unsplash.jpg"
 
 export default function Footer() {
   return (
     <>
 
-<footer className="footer">
-                <div className="overlay"></div>
+<footer className="footer" >
+              <Image 
+              className="footerImg"
+              src={footerImg}
+                alt="footerImg"
+                /> 
+                <div className="overlay">
+        
+                </div>
+
                 <div className="container">
                     <div className="row footer-row">
-                        <div className="col-sm-6 col-lg-3 mb-30">
-                            
+                        <div className="col-sm-6 col-lg-3 mb-30">  
                             <div className="footer-widget">
                                 <div className="footer-logo">
                                     <Image
@@ -32,7 +53,11 @@ export default function Footer() {
                                 
                                 <div className="contact-info">
                                     <div className="single-contact mb-0">
-                                        <span><i className="fas fa-clock"></i></span>
+                                        <span>
+                                           <FontAwesomeIcon
+                                          icon={faClockFour}
+                                          style={{ fontSize: 20, color: "white" }}
+                                        />  </span>
                                         <div className="info-cont">    
                                             <p>Monday - Fraiday, 9am - 5pm,</p>
                                             <p>Saturday &amp; Sunday - CLOSED</p>
@@ -56,7 +81,10 @@ export default function Footer() {
                                 <div className="contact-info">
         
                                     <div className="single-contact">
-                                        <span><i className="fa fa-phone"></i></span>
+                                        <span><FontAwesomeIcon
+                                          icon={faPhone}
+                                          style={{ fontSize: 20, color: "white" }}
+                                        />  </span>
                                         <div className="info-cont">
                                             <p>+(002) 0114-9912-318</p>       
                                             <p>+(002) 0111-7457-354</p>
@@ -65,7 +93,10 @@ export default function Footer() {
                                     </div>
                                     
                                     <div className="single-contact">
-                                        <span><i className="fa fa-envelope"></i></span>
+                                        <span><FontAwesomeIcon
+                                          icon={faEnvelope}
+                                          style={{ fontSize: 20, color: "white" }}
+                                        />  </span>
                                         <div className="info-cont">
                                             <p>Hello@example.com</p>
                                             <p>support@yourwebsite.com</p>
@@ -73,7 +104,10 @@ export default function Footer() {
                                     </div>
                                     
                                     <div className="single-contact mb-0">
-                                        <span><i className="fa fa-location-arrow"></i></span>
+                                        <span><FontAwesomeIcon
+                                          icon={faLocationPin}
+                                          style={{ fontSize: 20, color: "white" }}
+                                        />  </span>
                                          <div className="info-cont">
                                             <p>US - Los Angeles 5135 - 4234 </p>
                                             <p>In The Center Street Name Here</p>
@@ -99,31 +133,46 @@ export default function Footer() {
                                         <ul className="footer-link mb-0">
                                             <li>
                                                 <a href="about-us.html">
-                                                    <span><i className="fas fa-caret-right"></i></span> About Us
+                                                    <span> <FontAwesomeIcon
+                                          icon={faCaretRight}
+                                          style={{ fontSize: 14}}
+                                        /> </span> About Us
                                                 </a>
                                             </li>
         
                                             <li>
                                                 <a href="our-team.html">
-                                                    <span><i className="fas fa-caret-right"></i></span> Meet Our Team
+                                                    <span><FontAwesomeIcon
+                                          icon={faCaretRight}
+                                          style={{ fontSize: 14}}
+                                        /> </span> Meet Our Team
                                                 </a>
                                             </li>
         
                                             <li>
                                                 <a href="testimonials.html">
-                                                    <span><i className="fas fa-caret-right"></i></span> Testimonials
+                                                    <span><FontAwesomeIcon
+                                          icon={faCaretRight}
+                                          style={{ fontSize: 14}}
+                                        /> </span> Testimonials
                                                 </a>
                                             </li>
         
                                             <li>
                                                 <a href="case-study-three.html">
-                                                    <span><i className="fas fa-caret-right"></i></span> Case Studies
+                                                    <span><FontAwesomeIcon
+                                          icon={faCaretRight}
+                                          style={{ fontSize: 14}}
+                                        /> </span> Case Studies
                                                 </a>
                                             </li>
         
                                             <li>
                                                 <a href="contact-us.html">
-                                                    <span><i className="fas fa-caret-right"></i></span> Contact Us
+                                                    <span><FontAwesomeIcon
+                                          icon={faCaretRight}
+                                          style={{ fontSize: 14}}
+                                        /> </span> Contact Us
                                                 </a>
                                             </li>
                                         </ul>
@@ -139,23 +188,37 @@ export default function Footer() {
                         
                         
                         
-                        <div className="col-sm-6 col-lg-3" id="abId0.07993246170368917">
-                            <div className="footer-widget" id="abId0.44952832157777967">
+                        <div className="col-sm-6 col-lg-3">
+                            <div className="footer-widget">
                                 <h4>Newsletter</h4>
                                 <div className="line-footer"></div>
                                 <p className="mb-15">Signup for our mailing list to get latest updates and news.</p>
                                 
                                 <div className="newsletter-item" id="abId0.4416775194793088" abineguid="7341C8D1B86548628C2DBD3CB22B1DED">
                                     <input type="email" name="email" placeholder="Your Email"></input>
-                                    <button type="submit"><i className="fas fa-paper-plane"></i></button>
+                                    <button type="submit"> 
+                                    <FontAwesomeIcon
+                                     icon={faPaperPlane}
+                                       style={{ fontSize: 24}}/>
+                                    </button>
 
                                 
-                                List Icons Social Media
                                 <ul className="social-media">
-                                   <li><a href="#" className="facebook"><i className="fab fa-facebook-f"></i></a></li>
-                                   <li><a href="#" className="twitter"><i className="fab fa-twitter"></i></a></li>
-                                   <li><a href="#" className="instagram"><i className="fab fa-instagram"></i></a></li>
-                                   <li><a href="#" className="dribbble"><i className="fab fa-dribbble"></i></a></li>
+                                   <li><a href="#" className="facebook"> 
+                                   <FontAwesomeIcon
+                                     icon={faFacebookF}
+                                       style={{ fontSize: 14}}/>
+                                       </a> 
+                                       </li>
+                                   <li><a href="#" className="twitter">                                    <FontAwesomeIcon
+                                     icon={faTwitter}
+                                       style={{ fontSize: 14}}/></a></li>
+                                   <li><a href="#" className="instagram">                                    <FontAwesomeIcon
+                                     icon={faInstagram}
+                                       style={{ fontSize: 14}}/></a></li>
+                                   <li><a href="#" className="dribbble">                                    <FontAwesomeIcon
+                                     icon={faDribbble}
+                                       style={{ fontSize: 14}}/></a></li>
                                 </ul> 
                                 
                                 
@@ -175,7 +238,7 @@ export default function Footer() {
                      <div className="footer-copy">
       
                     <div className="copyright">
-                        © 2021 HUBA All Rights Reserved By
+                        © 2023 KABAD All Rights Reserved By
                         <a href="https://themeforest.net/user/Keep-go" target="_blank">KeepGo</a>
                     </div>
         
@@ -189,6 +252,8 @@ export default function Footer() {
                </div> 
             </footer>
 
+
+
     <style jsx global >
         {`
 /*===============================================================
@@ -200,7 +265,7 @@ footer {
   padding-top: 180px;
   background: #323232;
   position: relative;
-  background-image: url('../public/group-people-working-out-business-plan-office.jpg');
+  background-image: url('../static/pexels-fauxels-3182747.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,7 +273,14 @@ footer {
   height: 100%;
   left: 0;
   top: 0;
-
+  z-index:20
+}
+.footerImg {
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
 }
 .footer-default-padding {
   padding-top: 80px;
@@ -234,7 +306,6 @@ footer .overlay {
   height: 11px;
   margin-top: 20px;
   margin-bottom: 30px;
-  background-image: url(../images/aquarius.png);
   background-size: cover;
 }
 
@@ -243,9 +314,11 @@ footer .overlay {
   position: relative;
 }
 
-
+.footer-logo {
+  // display:flex;
+  color: #fff;
+}
 .footer-widget .footer-logo img {
-  width: 150px;
   margin-bottom: 20px;
 }
 .contact-info {
@@ -347,7 +420,7 @@ footer .overlay {
   text-align: center;
   font-size: 20px;
   color: #ffffff;
-  background: var(--main-color);
+  background: var(--second-color);
   display: inline-block;
   top: 0;
   line-height: 50px;
@@ -372,7 +445,7 @@ footer .copyright {
   text-align: center;
 }
 footer .copyright a {
-  color: var(--main-color);
+  color: var(--second-color);
   font-weight: 700;
 }
 .social-media {
@@ -394,7 +467,7 @@ footer .copyright a {
   text-align: center;
   color: #ffffff;
   border: 1px solid #ffbeab;
-  background: var(--main-color);
+  background: var(--second-color);
   display: block;
   
 }

@@ -12,10 +12,15 @@ function CarouselFade() {
           className="d-block w-100"
           src= {carouselOne}
           alt="First slide"
+          width={1920}
+          height={1280}
         />
         <Carousel.Caption className="CarouselCaption">
-          <h3>Grow Your own business </h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>Best Creative Team
+          <br></br>
+          With Smart Ideas
+          </h3>
+          <p>Our Strategies At Work Are The Means By Which To Achieve The Desired Goals, And Achieve Your Goals And Dreams Here</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='CarouselItem'>
@@ -23,11 +28,17 @@ function CarouselFade() {
           className="d-block w-100"
           src= {carouselTwo}
           alt="Second slide"
+          width={1920}
+          height={1280}
         />
 
         <Carousel.Caption className="CarouselCaption">
-          <h3>Find best soluation for Industry</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Find best soluation for Industry
+          <br></br>
+          With Smart Ideas
+          </h3>
+
+          <p>Our Strategies At Work Are The Means By Which To Achieve The Desired Goals, And Achieve Your Goals And Dreams Here</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='CarouselItem'>
@@ -35,13 +46,17 @@ function CarouselFade() {
           className="d-block w-100"
           src= {carouselThree}
           alt="Third slide"
+          width={1920}
+          height={1280}
         />
 
         <Carousel.Caption className="CarouselCaption">
-          <h3>make your life be Easiest</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>make your life be Easiest
+          <br></br>
+          With Smart Ideas
+          </h3>
+
+          <p>Our Strategies At Work Are The Means By Which To Achieve The Desired Goals, And Achieve Your Goals And Dreams Here</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

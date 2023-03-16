@@ -1,63 +1,22 @@
 import Head from 'next/head'
-import Navhome from './Navhome'
-
-import CarouselFade from './Carousel.js'
-import Footer from './Footer'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import CarouselFade from '../components/Carousel.js'
+import About from '../components/About'
+import Services from '../components/Services.js'
 
 function HomePage() {
   return (
     <>
-    <Navhome />
     <CarouselFade />
 
         <div className="container">
       <Head>
         <title>Kabad</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800"/>
       </Head>
       
-      <main>
-        {/* <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p> */}
-
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <About  />
+        <Services />
 
 
 
@@ -163,39 +122,11 @@ function HomePage() {
       `}</style>
 
       <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        a,
-        a:hover,
-        a:focus,
-        a:active,
-        button:focus {
-          text-decoration: none;
-          border: none;
-          outline: 0;
-          color: #fff;
-        }
-        ul ol,
-        li {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          display: inline-block;
-}
-        * {
-          box-sizing: border-box;
-        }
-
+        
         .CarouselItem {
           height: calc(100vh - 70px) !important;
           }
-
+          
           .CarouselItem::before {
             content: "";
             position: absolute;
@@ -213,29 +144,54 @@ function HomePage() {
             right: 0;
             left: 0;
             top: 0;
-            bottom: 0;
+            // bottom: 0;
             margin: auto;
-            transform: translate(0, 50%);
+            // transform: translate(0, 50%);
             padding: 0 ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
           }
+
+          .CarouselCaption p
+          {
+          color: #fff;
+          letter-spacing: 0.75px;
+          max-width: 550px;
+          margin-right: auto;
+          margin-left: auto;
+          }
+          
 
           .carousel-indicators{
             margin-bottom: 3rem;
           }
+
+
           .CarouselCaption h3 {
-            font-size: 50px;
+            font-size: 60px;
             font-weight: 700;
             color: #00d8c3;
-            text-transform: uppercase;
-            line-height: 50px;
-            font-family: 'Raleway', sans-serif;
+            text-transform: capitalize;
+            line-height: 1.1;
+            font-family: "Raleway",sans-serif;
             letter-spacing: 1.5px;
+            margin-bottom: 20px;
         }
+
+        @media (min-width: 575px) and (max-width: 1300px) { 
+          .CarouselItem img {
+            min-height:100%;
+            max-height:100%;
+          }
+        }
+
           }  
 
-      `}</style>
+      `}
+
+    </style>
     </div>
-    <Footer />
     </> 
 
   )
