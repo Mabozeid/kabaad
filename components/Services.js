@@ -19,6 +19,7 @@ function Services() {
             <Row>
             <Col md={12}>
               <div className='sectionTitle'>
+              <span className='subTitle'>what can to do </span>
               <h1>Main Features</h1>
               </div>
             </Col>
@@ -120,15 +121,54 @@ function Services() {
     {`
     .sectionTitle{
       text-align:center;
-      margin-bottom:50px;
+      margin-bottom:70px;
     }
+    .subTitle {
+      color: #444;
+      display: inline-block;
+      font-size: 18px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2000;
+      margin-left: 35px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 1.7;
+    }
+    
+    .subTitle::before {
+      clip-path: polygon(100% 71%, 62% 0, 24% 100%);
+      content: '';
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      background-color: var(--main-color);
+      z-index: 2000;
+      top: 4px;
+      left: -38px;
+      right: 0;
+      bottom: 0;
+    }
+    .subTitle::after {
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 110%;
+      background-color: #00d8c36e;
+      left: -5%;
+      right: 0;
+      bottom: 4px;
+      z-index: -1;
+    }
+    
     .sectionTitle h1{
       font-size: 45px;
-      text-transform: capitalize;
+      text-transform: uppercase;
       color: var(--main-color);
       font-weight: 700;
       font-family: "Raleway",sans-serif;
       margin: 20px auto;
+      margin-top: 10px;
     }
 
     .serviceItem {
