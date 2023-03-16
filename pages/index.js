@@ -179,7 +179,7 @@ function HomePage() {
             margin-bottom: 20px;
         }
 
-        @media (min-width: 575px) and (max-width: 1300px) { 
+        @media (max-width: 1300px) { 
           .CarouselItem img {
             min-height:100%;
             max-height:100%;
