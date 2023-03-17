@@ -1,23 +1,28 @@
 import Head from 'next/head'
+import Container from 'react-bootstrap/Container';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import CarouselFade from '../components/Carousel.js'
 import About from '../components/About'
 import Services from '../components/Services.js'
+import News from'../components/News'
 
 function HomePage() {
   return (
     <>
     <CarouselFade />
 
-        <div className="container">
+      <div className="">
       <Head>
         <title>Kabad</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-        <About  />
+      <Container>
+      <About  />
+      </Container>
+     
         <Services />
-
+          <News/>
 
 
       <style jsx>{`
