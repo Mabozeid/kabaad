@@ -5,12 +5,12 @@ import Link from 'next/link';
 const error = () => {
   return (
     <Container>
-    <div>
+    <div className='errorPage padtobo-100'>
       <Link href='/'>
       Go Home
       </Link>
 
-        </div>
+      </div>
    <style jsx global >
     {`
     .error {

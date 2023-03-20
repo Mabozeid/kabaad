@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
-import carouselOne from '../public/group-people-working-out-business-plan-office.jpg';
+import carouselOne from '../public/pexels-fauxels-3184360.jpg';
 import carouselTwo from '../public/pexels-fauxels-3182747.jpg';
 import carouselThree from '../public/pexels-fauxels-3184303.jpg';
 

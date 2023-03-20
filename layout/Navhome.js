@@ -56,13 +56,13 @@ function Navhome() {
           <Nav>
           {/* <Button variant="primary">Request A Quote</Button>{' '} */}
   <div className='mainBtn'>
-    <li>
+    <button>
     Request A Quote
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-    </li>
+    </button>
     </div>
 
           </Nav>
@@ -102,63 +102,6 @@ border-bottom: 1px solid #eee;
     text-transform: uppercase;
     letter-spacing: 0.25px;
   }
-
-  .mainBtn li {
-  --c: #2d4576;
-  color: var(--c);
-  border-radius: 0.5em;
-  background-color: #2d4576;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: sans-serif;
-  letter-spacing: .1em;
-  text-align: center;
-  line-height: 1.5;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-  padding: 10px;
-}
-
-.mainBtn li span {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: #00d8c3;
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
-}
-
-
-.mainBtn li:hover span {
-    transform: translateY(0) scale(2);
-}
-
-.mainBtn li span:nth-child(1) {
-    --n: 1;
-}
-
-.mainBtn li span:nth-child(2) {
-    --n: 2;
-}
-
-.mainBtn li span:nth-child(3) {
-    --n: 3;
-}
-
-.mainBtn li span:nth-child(4) {
-    --n: 4;
-}
-
 `}</style>
     </>
   );
